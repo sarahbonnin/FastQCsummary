@@ -51,5 +51,5 @@ done
 
 ## Create summarizing plot and save table_summary.txt into an Excel file ##
 
-Rscript fastqc_summarize_all.R FastQC_allsamples_summary.txt FastQC_table_summary.txt
+Rscript fastqc_summary.R FastQC_allsamples_summary.txt FastQC_table_summary.txt
 
