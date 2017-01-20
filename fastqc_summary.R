@@ -5,7 +5,10 @@
 ## Install required packages, if needed
 list.of.packages <- c("ggplot2", "reshape2", "WriteXLS")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
+if(length(new.packages)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(c("ggplot2", "reshape2", "WriteXLS"))
+}
 
 ## Load packages
 library(c("ggplot2", "reshape2", "WriteXLS"))
