@@ -11,7 +11,7 @@ if(length(new.packages)){
 }
 
 ## Load packages
-library(c("ggplot2", "reshape2", "WriteXLS"))
+library("ggplot2"); library("reshape2"); library("WriteXLS")
 
 ## Plot matrix of pass / warn / fail, to get a summary per project
 
